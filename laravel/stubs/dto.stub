@@ -6,14 +6,19 @@ readonly class {{name}}DTO
 {
     /**
      * Data Transfer Object untuk {{name}}.
-     * Menggunakan Constructor Property Promotion (Laravel 12/PHP 8.2+).
+     * Properti harus didefinisikan secara eksplisit untuk keamanan tipe data.
      */
     public function __construct(
-        public array $data,
+        // AI: Tambahkan properti dari FormRequest di sini
+        // public string $name,
+        // public int $amount,
     ) {}
 
-    public static function formRequest($request): self
+    public static function fromRequest($request): self
     {
-        return new self($request->validated());
+        return new self(
+            // AI: Petakan data dari $request->validated() ke properti di atas
+            // name: $request->validated('name'),
+        );
     }
 }
