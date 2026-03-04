@@ -1,0 +1,1 @@
+- Buatlah Feature Test untuk modul [NAMA_FITUR]. Gunakan Mocking pada Repository agar pengujian fokus pada logika bisnis di Service. Pastikan menguji skenario sukses dan skenario gagal (Exception).
