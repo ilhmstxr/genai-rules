@@ -1,0 +1,1 @@
+sets rules for API design patterns
